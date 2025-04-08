@@ -1,0 +1,23 @@
+#include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+
+&pinctrl {
+    &spi0_default: spi0_default {
+        group1 {
+            /* configure P18 as SPI0 clock, P19 as SPI0 MOSI */
+            pinmux = <SPI0_SCK_P18>, <SPI0_TX_P19>;
+        };
+        group2 {
+            /**
+             * We don't actually use MISO, so set it to a pin we don't use.
+             * Otherwise it likely get's tripped up as we use GP16 for D/C
+             */
+            pinmux = <SPI0_RX_P16>;
+        }
+    };
+
+    &uart0_default: uart0_default {
+        group1 {
+
+        }
+    }
+}

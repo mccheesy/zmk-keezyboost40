@@ -1,0 +1,6 @@
+if SHIELD_KEEZYBOOST40
+
+config ZMK_KEYBOARD_NAME
+    default "keezyboost40"
+
+endif
