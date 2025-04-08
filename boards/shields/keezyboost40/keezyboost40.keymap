@@ -1,0 +1,116 @@
+/*
+ * Uses the TypeBeastXD+ Home Edition layout by ChrisChrisLoLo
+ *      with a couple of minor additions (brightness controls)
+ * Source: https://github.com/ChrisChrisLoLo/TypeBeastXDPlus
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BASE        0
+#define WIN         1
+#define LOWER       2
+#define RAISE       3
+#define RAISE_LOWER 4
+
+&lt {
+    quick_tap_ms = <200>;
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        /** 0: Base (MacOS) Layer */
+        macos {
+        // ------------------------------------------------------------------------------------------
+        //           |   Q   |  W    |   E   |   R   |  T   |  Y   |  U    |  I    |  O   |   P   |
+        //           |   A   |  S    |   D   |   F   |  G   |  H   |  J    |  K    |  L   |   ;   |
+        //           |   Z   |  X    |   C   |   V   |  B   |  N   |  M    |  ,    |  .   |   /   |
+        //    (HOLD) |       |       |       | LCMD  | SPCE |      | BKSP  |       |      |       |
+        //     (TAP) | ESC   | LCTRL |       | TAB   | LOWR | RAIS | LSHFT |       | LALT | ENTR  |
+
+            display-name = "base";
+            label = "Base (Mac) Layer";
+            bindings = <
+&kp Q        &kp W      &kp E       &kp R          &kp T            &kp Y            &kp U           &kp I         &kp O      &kp P
+&kp A        &kp S      &kp D       &kp F          &kp G            &kp H            &kp J           &kp K         &kp L      &kp SEMI
+&kp Z        &kp X      &kp C       &kp V          &kp B            &kp N            &kp M           &kp COMMA     &kp DOT    &kp FSLH
+&kp ESC      &kp LCTRL  &none       &mt LCMD TAB   &lt LOWER SPACE  &mo RAISE        &mt LSHFT BKSP  &none         &kp LALT   &kp RET
+            >;
+        };
+
+        /** 1: Base (Windows) Layer */
+        windows {
+        // ------------------------------------------------------------------------------------------
+        //           |   Q   |   W   |   E   |   R   |  T   |  Y   |   U   |   I   |  O   |   P   |
+        //           |   A   |   S   |   D   |   F   |  G   |  H   |   J   |   K   |  L   |   ;   |
+        //           |   Z   |   X   |   C   |   V   |  B   |  N   |   M   |   ,   |  .   |   /   |
+        //    (HOLD) |       |       |       | LCTRL | SPCE |      | BKSP  |       |      |       |
+        //     (TAP) | ESC   | LGUI  |       | TAB   | LOWR | RAIS | LSHFT |       | LALT | ENTR  |
+
+            display-name = "base";
+            label = "Base (Win) Layer";
+            bindings = <
+&kp Q        &kp W      &kp E       &kp R          &kp T            &kp Y            &kp U           &kp I         &kp O      &kp P
+&kp A        &kp S      &kp D       &kp F          &kp G            &kp H            &kp J           &kp K         &kp L      &kp SEMI
+&kp Z        &kp X      &kp C       &kp V          &kp B            &kp N            &kp M           &kp COMMA     &kp DOT    &kp FSLH
+&kp ESC      &kp LGUI   &none       &mt LCTRL TAB  &lt LOWER SPACE  &mo RAISE        &mt LSHFT BKSP  &none         &kp LALT   &kp RET
+            >;
+        };
+
+        /** 2: Raise Layer */
+        raise {
+        // ------------------------------------------------------------------------------------------
+        //           |   1   |  2    |   3   |   4   |  5   |   6  |   7   |   8   |  9   |   0   |
+        //           |   `   |  -    |   =   |   [   |  ]   | LEFT | DOWN  |  UP   | RGHT |   "   |
+        //           |   \   |       |       |       |      |      | PG_DN | PG_UP |      |       |
+        //           |       |       |       |       | R+L  |      |       |       |      |       |
+
+            display-name = "raise";
+            label = "Raise Layer";
+            bindings = <
+&kp N1       &kp N2     &kp N3      &kp N4         &kp N5           &kp N6           &kp N7          &kp N8        &kp N9     &kp N0
+&kp GRAVE    &kp MINUS  &kp EQUAL   &kp LBKT       &kp RBKT         &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT  &kp DQT
+&kp BSLH     &none      &none       &none          &none            &none            &kp PG_UP       &kp PG_DN     &none      &none
+&none        &none      &none       &none          &mo RAISE_LOWER  &none            &none           &none         &none      &none
+            >;
+        };
+
+        /** 3: Lower Layer */
+        lower {
+        // ------------------------------------------------------------------------------------------
+        //           |  !    |  @    |   #   |  $    |  %   |   ^  |  &    |  *    |  (   |   )   |
+        //           |  ~    |  _    |   +   |  {    |  }   | LEFT | DOWN  |  UP   | RGHT |       |
+        //           |  |    |       |       |       |      |      | PG_DN | PG_UP |      |       |
+        //           |       |       |       | R+L   |      |      |       |       |      |       |
+
+            display-name = "lower";
+            label = "Lower Layer";
+            bindings = <
+&kp EXCL     &kp AT     &kp HASH    &kp DLLR       &kp PRCNT        &kp CARET        &kp AMPS        &kp STAR      &kp LPAR    &kp RPAR
+&kp TILDE    &kp UNDER  &kp PLUS    &kp LBRC       &kp RBRC         &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT   &none
+&kp PIPE     &none      &none       &none          &none            &none            &kp HOME        &kp END       &none       &none
+&none        &none      &none       &none          &none            &mo RAISE_LOWER  &none           &none         &none       &none
+            >;
+        };
+
+        /** 4: Raise + Lower Layer */
+        raise_lower {
+        // ------------------------------------------------------------------------------------------
+        //           | RESET |       |       |       |      |      |       |       |      |  DEL  |
+        //           |  F1   |  F2   |  F3   |  F4   | F5   |  F6  | VOL-  | VOL+  |      |       |
+        //           |  F7   |  F1   |  F9   |  F10  | F11  | F12  | BRI-  | BRI+  |      |       |
+        // (OS SWAP) | *WIN* |       | *MAC* |       |      |      |       |       |      |       |
+
+            display-name = "r+l";
+            label = "Raise + Lower Layer";
+            bindings = <
+&kp C_RESET  &none      &none       &none          &none            &none            &none           &none         &none      &kp DEL
+&kp F1       &kp F2     &kp F3      &kp F4         &kp F5           &kp F6           &kp K_VOL_DN    &kp K_VOL_UP  &none      &none
+&kp F7       &kp F8     &kp F9      &kp F10        &kp F11          &kp F12          &kp C_BRI_DN    &kp C_BRI_UP  &none      &none
+&none        &tog 1     &none       &tog 0         &none            &none            &none           &none         &none      &none
+            >;
+        };
+    };
+};
