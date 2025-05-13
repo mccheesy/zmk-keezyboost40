@@ -4,6 +4,7 @@ name: keezyboost40
 type: shield
 url: https://github.com/ChrisChrisLoLo/keezyboost40
 requires: [rpi_pico]
+exposes: [spi_st7735r]
 features:
   - keys
-  - studio
+  - display

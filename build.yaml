@@ -20,4 +20,3 @@
 include:
   - board: rpi_pico
     shield: keezyboost40
-    snippet: studio-rpc-usb-uart
