@@ -1,0 +1,2 @@
+config SHIELD_ST7735R_160x128
+    def_bool $(shields_list_contains,st7735r_160x128)
