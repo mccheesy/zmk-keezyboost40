@@ -1,4 +1,7 @@
 name: zmk-keyboard-keezyboost40
 build:
+  depends:
+    - zmk-tri-state
+    - zmk-vfx-gem-status
   settings:
     board_root: .

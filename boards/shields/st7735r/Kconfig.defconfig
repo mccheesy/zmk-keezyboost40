@@ -1,0 +1,35 @@
+if SHIELD_ST7735R_160x128
+
+select ST7735R
+
+if ZMK_DISPLAY
+
+config ST7735R_CMD_DATA_PIN
+    int "Command/Data GPIO Pin"
+    default 16
+    help
+        GPIO pin for the Command/Data line of the ST7735R display.
+
+config ST7735R_RESET_PIN
+    int "Reset GPIO Pin"
+    default 14
+    help
+        GPIO pin for the Reset line of the ST7735R display.
+
+config ST7735R_CS_PIN
+    int "Chip Select GPIO Pin"
+    default 17
+    help
+        GPIO pin for the Chip Select line of the ST7735R display.
+
+config ST7735R_WIDTH
+    int "Display Width (Pixels)"
+    default 160
+
+config ST7735R_HEIGHT
+    int "Display Height (Pixels)"
+    default 128
+
+endif # ZMK_DISPLAY
+
+endif # SHIELD_ST7735R_160x128

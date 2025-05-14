@@ -19,4 +19,4 @@
 ---
 include:
   - board: rpi_pico
-    shield: keezyboost40
+    shield: keezyboost40 st7735r_160x128
