@@ -534,17 +534,12 @@
 
         to_base {
             bindings = <&to 0>;
-            key-positions = <0 1>; // QW
+            key-positions = <0 1 2>; // QWF
         };
 
         to_game {
             bindings = <&to 1>;
-            key-positions = <1 2>; // WF
-        };
-
-        alt_tab_combo {
-            bindings = <&swapper>;
-            key-positions = <2 3>;  // FP
+            key-positions = <1 2 3>; // WFP
         };
 
         tab {
@@ -589,17 +584,17 @@
 
         bt_prv {
             bindings = <&bt BT_PRV>;
-            key-positions = <7 8>;  // UY
+            key-positions = <5 6>;  // JL
         };
 
         bt_nxt {
             bindings = <&bt BT_NXT>;
-            key-positions = <8 9>;  // Y"
+            key-positions = <6 7>;  // LU 
         };
 
         bt_clr {
             bindings = <&bt BT_CLR>;
-            key-positions = <7 8 9>; // UY"
+            key-positions = <5 6 7>; // JLU
         };
 
         bootloader {
@@ -626,7 +621,7 @@
             // ┃       ┃       ┃       ┃ (CTL) ┃ (SFT) ┃ (SFT) ┃ (CTL) ┃       ┃       ┃       ┃
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
             bindings = <
-                &kp Q            &kp W       &lt 3 F  &kp P            &kp B         &kp J         &kp L           &lt 3 U  &kp Y       &as SQT
+                &kp Q            &kp W       &lt 3 F  &kp P            &kp B         &kp J         &kp L           &lt 3 U  &kp Y       &ht DQT SQT
                 &hm LC(LSHFT) A  &hm LALT R  &lt 2 S  &hm LGUI T       &kp G         &kp M         &hm LGUI N      &lt 2 E  &hm LALT I  &hm LC(LSHFT) O
                 &kp Z            &kp X       &kp C    &kp D            &kp V         &kp K         &kp H           &ascq    &asde       &asft
                 &none            &none       &kp ESC  &mt LCTRL SPACE  &msl_t 0 TAB  &msr_t 0 RET  &mt LCTRL BSPC  &kp DEL  &none       &none
@@ -646,10 +641,10 @@
             // ┃       ┃       ┃ (ALT) ┃ (CTL) ┃ (SFT) ┃       ┃       ┃       ┃       ┃       ┃
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
             bindings = <
-                &kp Q  &kp W  &kp F         &kp P            &kp B          &none  &none  &none  &none  &none
-                &kp A  &kp R  &kp S         &kp T            &kp G          &none  &none  &none  &none  &none
-                &kp Z  &kp X  &kp C         &kp D            &kp V          &none  &none  &none  &none  &none
-                &sk 2  &sk 4  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &none  &none  &none  &none  &none
+                &kp Q  &kp W  &kp F         &kp P            &kp B          &trans  &trans  &trans  &trans  &trans
+                &kp A  &kp R  &kp S         &kp T            &kp G          &trans  &trans  &trans  &trans  &trans
+                &kp Z  &kp X  &kp C         &kp D            &kp V          &trans  &trans  &trans  &trans  &trans
+                &sl 2  &sl 4  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -659,7 +654,7 @@
             // ┃   [   ┃   7   ┃   8   ┃   9   ┃   ]   ┃   {   ┃   &   ┃   #   ┃   @   ┃   }   ┃
             // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
             // ┃   +   ┃   4   ┃   5   ┃   6   ┃   =   ┃   ^   ┃   _   ┃   `   ┃   $   ┃   :   ┃
-            // ┃       ┃       ┃ (num) ┃       ┃       ┃       ┃       ┃ (num) ┃       ┃       ┃
+            // ┃       ┃ (ALT) ┃ (num) ┃ (GUI) ┃       ┃       ┃ (GUI) ┃ (num) ┃ (ALT) ┃       ┃
             // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
             // ┃   *   ┃   1   ┃   2   ┃   3   ┃   \   ┃   |   ┃   %   ┃   <   ┃   >   ┃   ;   ┃
             // ╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
