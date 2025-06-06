@@ -439,7 +439,7 @@
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
             bindings = <
-&kp LBKT  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp RBKT  &kp AMPS  &kp LBRC  &kp HASH  &kp RBRC  &kp AT  &hm LC(LA(LSHFT)) KP_PLUS  &hm LALT KP_N4  &lt 2 KP_N5  &hm LGUI KP_N6  &hm LC(LSHFT) KP_EQUAL  &hm RC(RSHFT) PIPE  &hm RGUI LPAR  &lt 2 GRAVE  &hm LALT RPAR  &ht RC(LA(RSHFT)) COLON  &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &as BSLH  &kp LT  &kp PRCNT  &kp GT  &kp SEMI  &trans  &trans  &mt LALT KP_DOT  &mt LCTRL KP_MINUS  &mt LSHFT KP_ENTER  &mt RSHFT CARET  &mt RCTRL UNDER  &mt LALT DLLR  &trans  &trans
+&kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &kp AMPS  &kp LBRC  &kp HASH  &kp RBRC  &kp AT  &hm LC(LA(LSHFT)) KP_PLUS  &hm LALT N4  &lt 2 N5  &hm LGUI N6  &hm LC(LSHFT) KP_EQUAL  &hm RC(RSHFT) PIPE  &hm RGUI LPAR  &lt 2 GRAVE  &hm LALT RPAR  &ht RC(LA(RSHFT)) COLON  &kp KP_N0  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &as BSLH  &kp LT  &kp PRCNT  &kp GT  &kp SEMI  &trans  &trans  &mt LALT KP_DOT  &mt LCTRL KP_MINUS  &mt LSHFT KP_ENTER  &mt RSHFT CARET  &mt RCTRL UNDER  &mt LALT DLLR  &trans  &trans
             >;
         };
 
