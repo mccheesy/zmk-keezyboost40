@@ -400,7 +400,7 @@
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
             bindings = <
-&kp Q  &kp W  &lt 3 F  &kp P  &kp B  &kp J  &kp L  &lt 3 U  &kp Y  &as SQT  &hm LC(LA(LSHFT)) A  &hm LALT R  &lt 2 S  &hm LGUI T  &hm LC(LSHFT) G  &hm RC(RSHFT) M  &hm RGUI N  &lt 2 E  &hm LALT I  &hm LA(RC(RSHFT)) O  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &ascq  &asde  &asft  &none  &none  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &none  &none
+&kp Q  &kp W  &lt 3 F  &kp P  &kp B  &kp J  &kp L  &lt 3 U  &kp Y  &as SQT  &hm LC(LA(LSHFT)) A  &hm LALT R  &lt 2 S  &hm LGUI T  &hm LC(LSHFT) G  &hm RC(RSHFT) M  &hm RGUI N  &lt 2 E  &hm LALT I  &hm LA(RC(RSHFT)) O  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &ascq  &asde  &asft  &as LBKT  &ht LT LPAR  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &ht GT RPAR  &as RBKT
             >;
         };
 
@@ -419,7 +419,7 @@
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &lt 3 T  &kp Y  &kp U  &lt 3 I  &kp O  &kp P  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &lt 2 K  &kp L  &as APOS  &kp Z  &kp X  &kp C  &kp V  &lt 2 V  &kp N  &kp M  &ascq  &asde  &asft  &none  &none  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &none  &none
+&kp Q  &kp W  &kp E  &kp R  &lt 3 T  &kp Y  &kp U  &lt 3 I  &kp O  &kp P  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &lt 2 K  &kp L  &as APOS  &kp Z  &kp X  &kp C  &kp V  &lt 2 V  &kp N  &kp M  &ascq  &asde  &asft  &as LBKT  &ht LT LPAR  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &ht GT RPAR  &as RBRC
             >;
         };
 
@@ -459,7 +459,7 @@
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
             bindings = <
-&kp F15  &kp F7  &lt 3 LC(F8)  &kp F9  &kp F12  &kp HOME  &kp PG_DN  &lt 3 PG_UP  &kp END  &kp INS  &hm LA(LC(LSHFT)) F11  &mt LALT F4  &kp F5  &mt LGUI F6  &mt LC(LSHFT) F11  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PSCRN  &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &sk RSHFT  &sk RCTRL  &sk LALT  &sk RGUI  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F15  &kp F7  &lt 3 F8  &kp F9  &kp F12  &kp HOME  &kp PG_DN  &lt 3 PG_UP  &kp END  &kp INS  &hm LA(LC(LSHFT)) F14  &mt LALT F4  &kp F5  &mt LGUI F6  &mt LC(LSHFT) F11  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PSCRN  &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &sk RSHFT  &sk RCTRL  &sk LALT  &sk RGUI  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
