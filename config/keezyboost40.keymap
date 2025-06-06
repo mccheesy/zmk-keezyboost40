@@ -355,22 +355,22 @@
         };
 
         lcas {
-            bindings = <&kp LC(LA(LSHFT))>;
+            bindings = <&sk LC(LA(LSHFT))>;
             key-positions = <21 22 23>;
         };
 
         rcas {
-            bindings = <&kp LA(RC(RSHFT))>;
+            bindings = <&sk LA(RC(RSHFT))>;
             key-positions = <28 27 26>;
         };
 
         lcs {
-            bindings = <&kp LC(LSHFT)>;
+            bindings = <&sk LC(LSHFT)>;
             key-positions = <23 22>;
         };
 
         rcs {
-            bindings = <&kp RC(RSHFT)>;
+            bindings = <&sk RC(RSHFT)>;
             key-positions = <26 27>;
         };
 
