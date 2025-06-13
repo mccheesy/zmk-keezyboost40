@@ -498,7 +498,7 @@
             // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
             bindings = <
-&kp LT  &kp N7  &kp N8  &kp N9  &kp GT  &kp AMPS  &kp LBKT  &kp HASH  &kp RBKT  &kp GRAVE  &hm LC(LA(LSHFT)) KP_PLUS  &hm LALT N4  &lt 2 N5  &hm LGUI N6  &hm LC(LSHFT) KP_EQUAL  &hm RC(RSHFT) PIPE  &hm RGUI LPAR  &lt 2 AT  &hm LALT RPAR  &ht RC(LA(RSHFT)) COLON  &kp KP_MULTIPLY  &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &as BSLH  &kp LBRC  &kp PRCNT  &kp RBRC  &kp SEMI  &trans  &trans  &mt LALT KP_DOT  &mt LCTRL N0  &mt LSHFT KP_MINUS  &mt RSHFT UNDER  &mt RCTRL CARET  &mt LALT DLLR  &trans  &trans
+&kp LT  &kp N7  &kp N8  &kp N9  &kp GT  &kp AMPS  &kp LBKT  &kp HASH  &kp RBKT  &kp GRAVE  &hm LC(LA(LSHFT)) KP_PLUS  &hm LALT N4  &kp N2  &hm LGUI N6  &hm LC(LSHFT) KP_EQUAL  &hm RC(RSHFT) PIPE  &hm RGUI LPAR  &kp GRAVE  &hm LALT RPAR  &ht RC(LA(RSHFT)) COLON  &kp KP_MULTIPLY  &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &as BSLH  &kp LBRC  &kp PRCNT  &kp RBRC  &kp SEMI  &trans  &trans  &mt LALT KP_DOT  &mt LCTRL N0  &mt LSHFT KP_MINUS  &mt RSHFT UNDER  &mt RCTRL CARET  &mt LALT DLLR  &trans  &trans
             >;
         };
 
